@@ -3,7 +3,7 @@ module BlacklightUnapi
     protected
     def catalog
       add_routes do |options|
-        match 'catalog/unapi', :to => "catalog#unapi", :as => 'unapi'
+        match 'catalog/unapi', :to => "catalog#unapi", :as => 'unapi', :via => [:get]
       end
 
       super
